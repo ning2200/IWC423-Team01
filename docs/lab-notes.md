@@ -22,7 +22,9 @@
         1. *Fraud detection*: Set maximum limits on each transaction 
         2. *Recommend customer financial plans*: If customer's account has high balance, suggest suitable bankProducts catered 
         3. *Follow-up on inactive accounts*: If customer's account has been inactive for a set period (determined per opening date), follow up via phone/email and offer more attractive bankProducts to reduce churn
-    * [module_3.sql](./../sql/module_3.sql)
+    * [module_3_fraud_detection.sql](./../sql/module_3_fraud_detection.sql)
+    * [module_3_high_account_balance.sql](./../sql/module_3_high_account_balance.sql)
+    * [module_3_inactive_account_followup.sql](./../sql/module_3_inactive_account_followup.sql)
 
 * 29/12/25: Module 4
     * **SQL Joins**
