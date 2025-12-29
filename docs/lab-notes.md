@@ -1,6 +1,5 @@
 # IWC423 Advanced Database Systems Team 1 Notes
 
-
 ## Members
 
 - Tan Le Xuan
