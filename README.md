@@ -10,6 +10,8 @@ Assigned to create a schema for the banking domain.
 
 ## [Lab notes](./docs/lab-notes.md)
 
+Team Journal details written here.
+
 ## [Code files](./sql/)
 
 * 25/12/25: Module 2
