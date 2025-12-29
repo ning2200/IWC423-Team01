@@ -10,7 +10,10 @@ Assigned to create a schema for the banking domain.
 
 ## Code files
 
-* 24/12/25: [Module 1](./sql/module_1.sql)
 * 25/12/25: [Module 2](./sql/module_2.sql)
+    * Generated ER Diagram with [DBeaver](https://dbeaver.io/)
+
+![](./sql/module_2.png)
+
 * 26/12/25: [Module 3](./sql/module_3.sql)
 * 29/12/25: [Module 4](./sql/module_4.sql)
