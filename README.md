@@ -1,6 +1,6 @@
 # IWC423 Advanced Database Systems: Team 1 
 
-Assigned to create a schema for the Hospital Domain.
+Assigned to create a schema for the banking domain.
 
 ## Members
 
