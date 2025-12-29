@@ -26,4 +26,10 @@
     * [module_3.sql](./../sql/module_3.sql)
 
 * 29/12/25: Module 4
+    * **SQL Joins**
+        1. Show Customers with their Accounts 
+        2. Total number of Transactions per Account
+        3. Total Transaction value per Customer
+        4. Customers with more than one Account
+        5. Average fee per BankProduct
     * [module_4.sql](./../sql/module_4.sql)
