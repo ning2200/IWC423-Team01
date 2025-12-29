@@ -19,6 +19,10 @@
 ![](./screenshots/module_2.png)
 
 * 26/12/25: Module 3
+    * **Business logic for bank**
+        1. *Fraud detection*: Set maximum limits on each transaction 
+        2. *Recommend customer financial plans*: If customer's account has high balance, suggest suitable bankProducts catered 
+        3. *Follow-up on inactive accounts*: If customer's account has been inactive for a set period (determined per opening date), follow up via phone/email and offer more attractive bankProducts to reduce churn
     * [module_3.sql](./../sql/module_3.sql)
 
 * 29/12/25: Module 4
