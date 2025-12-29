@@ -5,8 +5,8 @@ Assigned to create a schema for the banking domain.
 ## Members
 
 - Tan Le Xuan
-- Gabriel Ong Zhe Mian
 - Luke Nathaniel Teo Bo Sheng
+- Gabriel Ong Zhe Mian
 
 ## [Lab notes](./docs/lab-notes.md)
 
