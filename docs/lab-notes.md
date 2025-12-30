@@ -14,7 +14,7 @@
 * 25/12/25: Module 2
     * Generated ER Diagram with [DBeaver](https://dbeaver.io/)
     * [population.sql](./../sql/population.sql)
-    * [module_2.sql](./../sql/module_2/sql)
+    * [module_2.sql](./../sql/module_2.sql)
 
 ![](./screenshots/module_2.png)
 
@@ -37,4 +37,3 @@
     * [module_4.sql](./../sql/module_4.sql)
 
 * 30/12/25: Module 5
-    * 
