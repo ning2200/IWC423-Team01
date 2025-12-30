@@ -1,3 +1,17 @@
+-- Idempotent re-run support:
+-- Reset all tables and sequences so inserts produce the same IDs each time.
+BEGIN;
+
+TRUNCATE TABLE
+	TransactionLines,
+	Transactions,
+	Accounts,
+	BankProducts,
+	TransactionStatus,
+	BankStaff,
+	Customers
+RESTART IDENTITY CASCADE;
+
 -- 1. Populate Customers
 -- We include a mix of low/high risk customers to test KYC logic
 INSERT INTO Customers (CustomerName, Email, Phone, Address, KYCStatus, RiskRating) VALUES
@@ -73,3 +87,5 @@ INSERT INTO TransactionLines (TransactionID, ProductID, Amount, FeeAmount, LineD
 (4, 1, 100.00, 10.00, 'Initial Deposit + Account Fee'),
 (5, 1, 12000.00, 50.00, 'External Transfer Out'),
 (6, 4, 100000.00, 2000.00, 'Loan Principal Disbursement');
+
+COMMIT;

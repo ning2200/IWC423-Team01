@@ -1,5 +1,19 @@
 -- banking domain database schema
 
+-- Idempotent re-run support:
+-- Drop objects in dependency order so this script can be executed repeatedly.
+BEGIN;
+
+DROP VIEW IF EXISTS View_PotentialFraudTransactions;
+
+DROP TABLE IF EXISTS TransactionLines;
+DROP TABLE IF EXISTS Transactions;
+DROP TABLE IF EXISTS Accounts;
+DROP TABLE IF EXISTS BankProducts;
+DROP TABLE IF EXISTS TransactionStatus;
+DROP TABLE IF EXISTS BankStaff;
+DROP TABLE IF EXISTS Customers;
+
 -- 1. Customers Table
 
 CREATE TABLE Customers (
@@ -101,3 +115,5 @@ CREATE TABLE TransactionLines (
     FOREIGN KEY (TransactionID) REFERENCES Transactions(TransactionID) ON DELETE CASCADE,
     FOREIGN KEY (ProductID) REFERENCES BankProducts(ProductID) ON DELETE SET NULL
 );
+
+COMMIT;
