@@ -35,3 +35,6 @@
         4. Customers with more than one Account
         5. Average fee per BankProduct
     * [module_4.sql](./../sql/module_4.sql)
+
+* 30/12/25: Module 5
+    * 
