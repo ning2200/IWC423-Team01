@@ -1,4 +1,4 @@
-CREATE VIEW View_PotentialFraudTransactions AS
+CREATE OR REPLACE VIEW View_PotentialFraudTransactions AS
 SELECT 
     t.TransactionID,
     t.TransactionDate,
