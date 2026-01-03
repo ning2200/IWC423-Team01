@@ -48,3 +48,14 @@
 * [module_4.sql](./../sql/module_4.sql)
 
 ### 30/12/25: Module 5
+
+* Created diagram for horizontal and vertical sharding/partitioning.
+
+### 31/12/25: Module 6
+
+* Assigned to implement database security designs for our banking domain. 
+
+### 02/01/26: Module 7
+
+* **NoSQL strategy**
+* Chose a suitable dataset from KAGGLE and a respectively suitable database. Assigned to explain the risks and challenges associated with using the database for the business. 
