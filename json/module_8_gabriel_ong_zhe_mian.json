@@ -1,0 +1,4 @@
+{
+  "student": "Gabriel Ong Zhe Mian",
+  "scenario": "Loan officer processes multi-leg transaction with $8,000 fee across checking-to-loan transfer for active corporate client. TransactionLines capture fees per BankProduct, aggregated via Module 4 queries for avg fee reporting. Encrypted PII and immutable logs ensure CIA triad compliance during monthly risk bucketing in Compliance shard."
+}

@@ -1,0 +1,4 @@
+{
+  "student": "Luke Nathaniel Teo Bo Sheng",
+  "scenario": "Retail customer with $120,000 savings balance inactive for 95 days receives automated follow-up email with 2.5% high-yield product recommendation. Cross-shard query pulls account history from Retail shard and customer data from master replication. RBAC ensures teller can only view branch-specific records while suggesting personalized financial plan."
+}
