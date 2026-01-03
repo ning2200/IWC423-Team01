@@ -1,0 +1,4 @@
+{
+  "student": "Tan Le Xuan",
+  "scenario": "High-risk corporate client Charlie Cho (RiskRating 0.8) attempts a $15,000 mobile transfer from checking account on Dec 15, 2025. The transaction exceeds checking limit and triggers fraud alert due to unverified KYCStatus. Compliance team reviews via OLAP shard, applies STRIDE mitigation, and recommends investment product downgrade to reduce churn risk."
+}
