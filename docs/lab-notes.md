@@ -59,3 +59,11 @@
 
 * **NoSQL strategy**
 * Chose a suitable dataset from KAGGLE and a respectively suitable database. Assigned to explain the risks and challenges associated with using the database for the business. 
+
+### 03/01/26: Module 8
+
+* Decided on and scripted out a long-tail marketing strategy for our team's project within the bankign domain.
+
+### 05/01/26: Module 9
+
+* Attempted sample MongoDB scripts for the provided exercise A-F within the slides
