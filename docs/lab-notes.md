@@ -82,3 +82,8 @@
     1. *Part 1*: Analytical, Storage and Infrastructure Technologies for your Team Project 
     2. *Part 2*: Database integration approach
     3. *Part 3*: Approach to improving p95 for a 5-second response time 
+
+### 08/01/26: Module 12
+
+* Added elaboration on data quality and security risks for the banking domain within the project report
+* Refined strategy to overcome cybersecurity risks associated with our banking domain
