@@ -1,9 +1,18 @@
 # IWC423 Advanced Database Systems: Team 1 
 
-Assigned to create a schema for the banking domain.
+## Task
 
-Daily team journal and [code files](./sql/) are written [here](./docs/lab-notes.md).
-## Members
+Our team was assigned by Prof Bhuvan to create a schema for the banking domain.
+
+We additionally created a [mock frontend](./mock/) to show what the Bank's Portal *(using the hybrid DB approach)* for Client and Admin users could look like.
+
+The Bank Portal is **live** at [...]().
+
+## Files
+
+Our team's daily team journal and [code files](./sql/) are written [here](./docs/lab-notes.md).
+
+## Team Members
 
 * Tan Le Xuan
 * Gabriel Ong Zhe Mian

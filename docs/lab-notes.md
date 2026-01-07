@@ -2,9 +2,9 @@
 
 ## Members
 
-- Tan Le Xuan
-- Gabriel Ong Zhe Mian
-- Luke Nathaniel Teo Bo Sheng
+* Tan Le Xuan
+* Gabriel Ong Zhe Mian
+* Luke Nathaniel Teo Bo Sheng
 
 ## Code files
 
@@ -18,14 +18,14 @@
 * [population.sql](./../sql/population.sql)
 * [module_2.sql](./../sql/module_2.sql)
 
-![](./screenshots/mod9_accounts.png)
-![](./screenshots/mod9_bank_products.png)
-![](./screenshots/mod9_bank_staff.png)
-![](./screenshots/mod9_customers.png)
-![](./screenshots/mod9_schema.png)
-![](./screenshots/mod9_transacation_lines.png)
-![](./screenshots/mod9_transaction_status.png)
-![](./screenshots/mod9_transactions.png)
+![](./screenshots/schema.png)
+![](./screenshots/accounts.png)
+![](./screenshots/bank_products.png)
+![](./screenshots/bank_staff.png)
+![](./screenshots/customers.png)
+![](./screenshots/transaction_lines.png)
+![](./screenshots/transaction_status.png)
+![](./screenshots/transactions.png)
 
 ### 26/12/25: Module 3
 
@@ -62,7 +62,9 @@
 
 ### 03/01/26: Module 8
 
-* Decided on and scripted out a long-tail marketing strategy for our team's project within the bankign domain.
+* Decided on and scripted out a long-tail marketing strategy for our team's project within the banking domain.
+* Created `.json` files for each team member [here](./../json/)
+
 
 ### 05/01/26: Module 9
 
