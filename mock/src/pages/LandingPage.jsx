@@ -3,7 +3,7 @@ import { Building2, Shield, User, Database, ArrowRight, Github } from 'lucide-re
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-bank-primary via-bank-primary to-blue-900">
+    <div className="min-h-screen bg-gradient-to-br from-ku-crimson-dark via-ku-crimson to-ku-crimson-light">
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
@@ -34,8 +34,8 @@ export default function LandingPage() {
             className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all hover:scale-[1.02]"
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="p-3 bg-red-500/20 rounded-xl">
-                <Shield className="w-8 h-8 text-red-400" />
+              <div className="p-3 bg-white/20 rounded-xl">
+                <Shield className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-white">Admin Portal</h2>
@@ -65,8 +65,8 @@ export default function LandingPage() {
             className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all hover:scale-[1.02]"
           >
             <div className="flex items-center gap-4 mb-4">
-              <div className="p-3 bg-blue-500/20 rounded-xl">
-                <User className="w-8 h-8 text-blue-400" />
+              <div className="p-3 bg-white/20 rounded-xl">
+                <User className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-white">Client Portal</h2>
@@ -134,10 +134,10 @@ export default function LandingPage() {
         {/* Footer */}
         <div className="text-center mt-16">
           <p className="text-white/40 text-sm">
-            IWC423 Advanced Database Systems • January 2026
+            IWC423 Advanced Database Systems 
           </p>
           <a 
-            href="https://github.com/gongahkia/IWC423-Team01" 
+            href="https://github.com/ning2200/IWC423-Team01" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-4 text-white/60 hover:text-white transition-colors"

@@ -24,10 +24,10 @@ const monthlyData = [
 
 const transactionTypeData = [
   { name: 'Deposit', value: 35, color: '#10b981' },
-  { name: 'Withdrawal', value: 28, color: '#f59e0b' },
-  { name: 'Transfer', value: 25, color: '#3b82f6' },
-  { name: 'Purchase', value: 8, color: '#8b5cf6' },
-  { name: 'Disbursement', value: 4, color: '#ec4899' },
+  { name: 'Withdrawal', value: 28, color: '#8B1538' },
+  { name: 'Transfer', value: 25, color: '#A91D3A' },
+  { name: 'Purchase', value: 8, color: '#C73659' },
+  { name: 'Disbursement', value: 4, color: '#5C0E24' },
 ]
 
 // Recent transactions
@@ -172,8 +172,8 @@ export default function AdminDashboard() {
                 <Area 
                   type="monotone" 
                   dataKey="volume" 
-                  stroke="#2563eb" 
-                  fill="#3b82f6" 
+                  stroke="#8B1538" 
+                  fill="#A91D3A" 
                   fillOpacity={0.2}
                 />
               </AreaChart>

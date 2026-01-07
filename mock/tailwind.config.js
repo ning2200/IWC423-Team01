@@ -7,12 +7,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bank-primary': '#1e3a5f',
-        'bank-secondary': '#2563eb',
-        'bank-accent': '#0ea5e9',
+        'bank-primary': '#8B1538',
+        'bank-secondary': '#A91D3A',
+        'bank-accent': '#C73659',
+        'bank-light': '#F5E6E8',
+        'bank-dark': '#5C0E24',
         'bank-success': '#10b981',
         'bank-warning': '#f59e0b',
         'bank-danger': '#ef4444',
+        'ku-crimson': '#8B1538',
+        'ku-crimson-light': '#A91D3A',
+        'ku-crimson-dark': '#5C0E24',
+        'ku-gray': '#4A4A4A',
+        'ku-gray-light': '#F5F5F5',
       }
     },
   },

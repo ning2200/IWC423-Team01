@@ -117,7 +117,7 @@ export default function ClientLayout() {
               © 2026 IWC423-Team01-Bank-Pte-Ltd. All rights reserved.
             </p>
             <p className="text-xs text-gray-400">
-              IWC423 Advanced Database Systems - Team 1 Project
+              IWC423 Advanced Database Systems - Korea University - Team 1 Project
             </p>
           </div>
         </div>

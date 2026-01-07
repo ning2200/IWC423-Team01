@@ -93,6 +93,8 @@ export default function AdminLayout() {
           </NavLink>
           <p className="text-xs text-white/40 mt-3 text-center">
             IWC423 Advanced Database Systems
+            <br />
+            <span className="text-white/30">Korea University</span>
           </p>
         </div>
       </aside>
