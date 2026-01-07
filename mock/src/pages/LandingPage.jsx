@@ -91,46 +91,6 @@ export default function LandingPage() {
           </Link>
         </div>
 
-        {/* Project Info */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <Database className="w-6 h-6 text-white/80" />
-            <h3 className="text-xl font-bold text-white">Project Overview</h3>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="font-semibold text-white mb-3">Database Schema</h4>
-              <ul className="space-y-1 text-sm text-white/60">
-                <li>• Customers (KYC, Risk Rating)</li>
-                <li>• Accounts (Checking, Savings, Loan)</li>
-                <li>• Transactions & TransactionLines</li>
-                <li>• BankProducts & BankStaff</li>
-                <li>• TransactionStatus</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-white mb-3">Module 3 Business Rules</h4>
-              <ul className="space-y-1 text-sm text-white/60">
-                <li>• Fraud Detection (Threshold-based)</li>
-                <li>• High Balance Recommendations</li>
-                <li>• Inactive Account Follow-up</li>
-                <li>• PostgreSQL Views</li>
-                <li>• MongoDB Document Analytics</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <h4 className="font-semibold text-white mb-3">Team Members</h4>
-            <div className="flex flex-wrap gap-4">
-              <span className="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-white/80">Tan Le Xuan</span>
-              <span className="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-white/80">Gabriel Ong Zhe Mian</span>
-              <span className="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-white/80">Luke Nathaniel Teo Bo Sheng</span>
-            </div>
-          </div>
-        </div>
-
         {/* Footer */}
         <div className="text-center mt-16">
           <p className="text-white/40 text-sm">

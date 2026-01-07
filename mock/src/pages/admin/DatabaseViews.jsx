@@ -630,6 +630,13 @@ export default function AdminDatabaseViews() {
               <Table2 className="w-5 h-5 text-blue-600" />
               <h3 className="font-semibold text-gray-900">PostgreSQL Schema (module_2.sql)</h3>
             </div>
+            
+            {/* ER Diagram */}
+            <div className="mb-6">
+              <h4 className="text-sm font-medium text-gray-700 mb-3">Entity-Relationship Diagram</h4>
+              <MermaidDiagram chart={schemaERDiagram} title="Banking Domain ER Diagram" />
+            </div>
+            
             <CodeBlock code={schemaSQL} language="sql" title="Banking Domain Schema" />
           </>
         )}
@@ -647,6 +654,15 @@ export default function AdminDatabaseViews() {
         {activeTab === 'MongoDB Documents' && (
           <>
             <div className="space-y-6">
+              {/* MongoDB Document Structure Diagram */}
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <FileJson className="w-5 h-5 text-green-600" />
+                  <h3 className="font-semibold text-gray-900">Document Structure Overview</h3>
+                </div>
+                <MermaidDiagram chart={mongoDocDiagram} title="MongoDB Collections & Document Structure" />
+              </div>
+            
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <FileJson className="w-5 h-5 text-green-600" />
@@ -680,6 +696,13 @@ export default function AdminDatabaseViews() {
               <GitBranch className="w-5 h-5 text-purple-600" />
               <h3 className="font-semibold text-gray-900">Hybrid Database Integration Strategy</h3>
             </div>
+            
+            {/* Hybrid Architecture Diagram */}
+            <div className="mb-6">
+              <h4 className="text-sm font-medium text-gray-700 mb-3">Architecture Overview</h4>
+              <MermaidDiagram chart={hybridDiagram} title="PostgreSQL + MongoDB Hybrid Architecture" />
+            </div>
+            
             <CodeBlock code={hybridIntegration} language="sql" title="PostgreSQL + MongoDB Integration" />
           </>
         )}
