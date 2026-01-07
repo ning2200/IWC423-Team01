@@ -5,29 +5,36 @@ import MermaidDiagram from '../../components/MermaidDiagram'
 
 const tabs = ['Schema', 'PostgreSQL Views', 'MongoDB Documents', 'Hybrid Integration']
 
-// ER Diagram for PostgreSQL Schema
+// ER Diagram for PostgreSQL Schema - simplified syntax
 const schemaERDiagram = `erDiagram
+    CUSTOMERS ||--o{ ACCOUNTS : has
+    CUSTOMERS ||--o{ TRANSACTIONS : makes
+    ACCOUNTS ||--o{ TRANSACTIONS : contains
+    TRANSACTIONS ||--o{ TRANSACTIONLINES : has
+    BANKPRODUCTS ||--o{ TRANSACTIONLINES : used_in
+    BANKSTAFF ||--o{ TRANSACTIONS : processes
+    TRANSACTIONSTATUS ||--o{ TRANSACTIONS : status
+
     CUSTOMERS {
         int CustomerID PK
-        varchar CustomerName
-        varchar Email UK
-        varchar Phone
-        text Address
-        varchar KYCStatus
-        decimal RiskRating
-        timestamp CreatedDate
+        string CustomerName
+        string Email
+        string Phone
+        string Address
+        string KYCStatus
+        float RiskRating
+        date CreatedDate
     }
     
     ACCOUNTS {
         int AccountID PK
         int CustomerID FK
-        varchar AccountNumber UK
-        varchar AccountType
+        string AccountNumber
+        string AccountType
         date OpenDate
-        decimal Balance
-        varchar Currency
-        varchar AccountStatus
-        timestamp CreatedDate
+        float Balance
+        string Currency
+        string AccountStatus
     }
     
     TRANSACTIONS {
@@ -36,79 +43,70 @@ const schemaERDiagram = `erDiagram
         int CustomerID FK
         int StaffID FK
         int StatusID FK
-        timestamp TransactionDate
-        varchar TransactionType
-        decimal TotalAmount
-        varchar Channel
-        text Notes
+        date TransactionDate
+        string TransactionType
+        float TotalAmount
+        string Channel
     }
     
     TRANSACTIONLINES {
         int TransactionLineID PK
         int TransactionID FK
         int ProductID FK
-        decimal Amount
-        decimal FeeAmount
-        text LineDescription
+        float Amount
+        float FeeAmount
+        string LineDescription
     }
     
     BANKPRODUCTS {
         int ProductID PK
-        varchar ProductName
-        varchar ProductType
-        decimal InterestRate
-        text FeeSchedule
-        boolean ActiveFlag
+        string ProductName
+        string ProductType
+        float InterestRate
+        string FeeSchedule
+        bool ActiveFlag
     }
     
     BANKSTAFF {
         int StaffID PK
-        varchar FirstName
-        varchar LastName
-        varchar RoleTitle
-        varchar BranchID
-        varchar Email
-        boolean Active
+        string FirstName
+        string LastName
+        string RoleTitle
+        string BranchID
+        string Email
+        bool Active
     }
     
     TRANSACTIONSTATUS {
         int StatusID PK
-        varchar StatusName UK
-        text StatusDescription
-        boolean IsFinal
-    }
-    
-    CUSTOMERS ||--o{ ACCOUNTS : "has"
-    CUSTOMERS ||--o{ TRANSACTIONS : "makes"
-    ACCOUNTS ||--o{ TRANSACTIONS : "contains"
-    TRANSACTIONS ||--o{ TRANSACTIONLINES : "has"
-    BANKPRODUCTS ||--o{ TRANSACTIONLINES : "referenced_in"
-    BANKSTAFF ||--o{ TRANSACTIONS : "processes"
-    TRANSACTIONSTATUS ||--o{ TRANSACTIONS : "status_of"`
+        string StatusName
+        string StatusDescription
+        bool IsFinal
+    }`
 
-// MongoDB Document Structure Diagram
+// MongoDB Document Structure Diagram - simplified
 const mongoDocDiagram = `flowchart TB
-    subgraph customers["📁 customers Collection"]
+    subgraph customers[customers Collection]
         direction TB
-        C1["<b>Customer Document</b><br/>_id: ObjectId<br/>customerId: Number<br/>customerName: String<br/>email: String"]
-        C2["<b>Embedded: address</b><br/>street, city, postalCode"]
-        C3["<b>Embedded: accounts[]</b><br/>accountId, accountNumber<br/>accountType, balance"]
-        C4["<b>Embedded: auditLog[]</b><br/>action, timestamp<br/>staffId, notes"]
-        C5["<b>Embedded: preferences</b><br/>language, notifications"]
+        C1[Customer Document]
+        C2[address subdoc]
+        C3[accounts array]
+        C4[auditLog array]
+        C5[preferences subdoc]
         C1 --> C2
         C1 --> C3
         C1 --> C4
         C1 --> C5
     end
     
-    subgraph transactions["📁 transaction_events Collection"]
+    subgraph transactions[transaction_events Collection]
         direction TB
-        T1["<b>Transaction Event</b><br/>_id: ObjectId<br/>transactionId: String<br/>accountId, customerId"]
-        T2["<b>Embedded: transaction</b><br/>type, amount, currency<br/>channel, status"]
-        T3["<b>Embedded: fraudAnalysis</b><br/>flagged, reason<br/>riskScore, threshold"]
-        T4["<b>Embedded: deviceInfo</b><br/>type, os, appVersion"]
-        T5["<b>Embedded: geolocation</b><br/>lat, long, city<br/>isAnomalous"]
-        T6["<b>Embedded: networkMetrics</b><br/>sliceId, latency<br/>bandwidth"]
+        T1[Transaction Event]
+        T2[transaction subdoc]
+        T3[fraudAnalysis subdoc]
+        T4[deviceInfo subdoc]
+        T5[geolocation subdoc]
+        T6[networkMetrics subdoc]
         T1 --> T2
         T1 --> T3
         T1 --> T4
@@ -116,64 +114,65 @@ const mongoDocDiagram = `flowchart TB
         T1 --> T6
     end
     
-    subgraph analytics["📁 fraud_analytics Collection"]
+    subgraph analytics[fraud_analytics Collection]
         direction TB
-        A1["<b>Aggregated Results</b><br/>_id: accountType<br/>totalFlagged: Number"]
-        A2["<b>Computed Fields</b><br/>avgRiskScore<br/>alertPriority"]
+        A1[Aggregated Results]
+        A2[Computed Fields]
         A1 --> A2
     end
     
-    customers -.->|"Referenced by<br/>customerId"| transactions
-    transactions -.->|"Aggregated into"| analytics`
+    customers -.-> transactions
+    transactions -.-> analytics
+    
+    style customers fill:#E8F5E9,stroke:#2E7D32
+    style transactions fill:#E3F2FD,stroke:#1565C0
+    style analytics fill:#FFF3E0,stroke:#EF6C00`
 
-// Hybrid Integration Diagram
+// Hybrid Integration Diagram - simplified
 const hybridDiagram = `flowchart TB
-    subgraph client["🖥️ Client Applications"]
-        WEB["Web Portal<br/>(React)"]
-        MOBILE["Mobile App<br/>(iOS/Android)"]
-        API["REST API<br/>Gateway"]
+    subgraph client[Client Applications]
+        WEB[Web Portal]
+        MOBILE[Mobile App]
+        API[REST API Gateway]
     end
     
-    subgraph app["⚙️ Application Layer"]
-        RULES["Module 3<br/>Rules Engine"]
-        FRAUD["Real-time<br/>Fraud Detection"]
-        CDC["Change Data<br/>Capture (CDC)"]
+    subgraph app[Application Layer]
+        RULES[Module 3 Rules Engine]
+        FRAUD[Fraud Detection]
+        CDC[Change Data Capture]
     end
     
-    subgraph postgres["🐘 PostgreSQL (OLTP)"]
+    subgraph postgres[PostgreSQL - OLTP]
         direction TB
-        PG_CUST["Customers"]
-        PG_ACC["Accounts"]
-        PG_TXN["Transactions"]
-        PG_LINES["TransactionLines"]
-        PG_PROD["BankProducts"]
-        PG_STATUS["TransactionStatus"]
-        
-        PG_VIEW1["View: PotentialFraud<br/>Transactions"]
-        PG_VIEW2["View: HighBalance<br/>Recommendations"]
-        PG_VIEW3["View: InactiveAccount<br/>Followup"]
+        PG_CUST[Customers]
+        PG_ACC[Accounts]
+        PG_TXN[Transactions]
+        PG_LINES[TransactionLines]
+        PG_PROD[BankProducts]
+        PG_VIEW1[View: PotentialFraudTransactions]
+        PG_VIEW2[View: HighBalanceRecommendations]
+        PG_VIEW3[View: InactiveAccountFollowup]
     end
     
-    subgraph mongo["🍃 MongoDB (OLAP)"]
+    subgraph mongo[MongoDB - OLAP]
         direction TB
-        MG_CUST["customer_profiles<br/>(denormalized)"]
-        MG_TXN["transaction_events<br/>(enriched)"]
-        MG_FRAUD["fraud_analytics<br/>(aggregated)"]
-        MG_AUDIT["audit_logs<br/>(append-only)"]
-        MG_MKT["marketing_segments<br/>(ML features)"]
+        MG_CUST[customer_profiles]
+        MG_TXN[transaction_events]
+        MG_FRAUD[fraud_analytics]
+        MG_AUDIT[audit_logs]
     end
     
     WEB --> API
     MOBILE --> API
     API --> RULES
     
-    RULES -->|"ACID Writes"| postgres
-    RULES -->|"Analytics Queries"| mongo
+    RULES --> postgres
+    RULES --> mongo
     
     FRAUD --> MG_FRAUD
     
-    postgres -->|"CDC Stream<br/>(Debezium/Kafka)"| CDC
-    CDC -->|"Enriched Events"| mongo
+    postgres --> CDC
+    CDC --> mongo
     
     PG_TXN --> PG_VIEW1
     PG_ACC --> PG_VIEW2

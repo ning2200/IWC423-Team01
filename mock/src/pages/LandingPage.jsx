@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Building2, Shield, User, Database, ArrowRight, Github } from 'lucide-react'
+import { Building2, Shield, User, ArrowRight, Github } from 'lucide-react'
 
 export default function LandingPage() {
   return (
