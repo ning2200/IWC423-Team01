@@ -6,7 +6,7 @@ Our team was assigned by Prof Bhuvan to create a schema for the banking domain.
 
 We additionally created a [mock frontend](./mock/) to show what the Bank's Portal *(using the hybrid DB approach)* for Client and Admin users could look like.
 
-The Bank Portal is **live** at [...]().
+The Bank Portal is **live** at [iwc-423-team01.vercel.app/](https://iwc-423-team01.vercel.app/).
 
 ## Files
 
