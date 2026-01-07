@@ -67,3 +67,25 @@
 ### 05/01/26: Module 9
 
 * Attempted sample MongoDB scripts for the provided exercise A-F within the slides
+* Added summary writeup for tasks completed during the lesson
+
+![](./screenshots/mod9_accounts.png)
+![](./screenshots/mod9_bank_products.png)
+![](./screenshots/mod9_bank_staff.png)
+![](./screenshots/mod9_customers.png)
+![](./screenshots/mod9_schema.png)
+![](./screenshots/mod9_transacation_lines.png)
+![](./screenshots/mod9_transaction_status.png)
+![](./screenshots/mod9_transactions.png)
+
+### 06/01/26: Module 10
+
+* Attempted sample MongoDB scripts for the provided exercise A-E within the slides
+* Added writeup for application of MongoDB to our specific banking domain, as well as tradeoffs between traditional relational PostGreSQL ORM and MongoDB's NoSQL setup
+
+### 07/01/26: Module 11
+
+* Added a detailed writeup on the below 3 areas for our banking domain example
+    1. *Part 1*: Analytical, Storage and Infrastructure Technologies for your Team Project 
+    2. *Part 2*: Database integration approach
+    3. *Part 3*: Approach to improving p95 for a 5-second response time 
