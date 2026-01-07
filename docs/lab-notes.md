@@ -18,14 +18,14 @@
 * [population.sql](./../sql/population.sql)
 * [module_2.sql](./../sql/module_2.sql)
 
-![](./screenshots/schema.png)
-![](./screenshots/accounts.png)
-![](./screenshots/bank_products.png)
-![](./screenshots/bank_staff.png)
-![](./screenshots/customers.png)
-![](./screenshots/transaction_lines.png)
-![](./screenshots/transaction_status.png)
-![](./screenshots/transactions.png)
+![](./screenshots/mod9_accounts.png)
+![](./screenshots/mod9_bank_products.png)
+![](./screenshots/mod9_bank_staff.png)
+![](./screenshots/mod9_customers.png)
+![](./screenshots/mod9_schema.png)
+![](./screenshots/mod9_transacation_lines.png)
+![](./screenshots/mod9_transaction_status.png)
+![](./screenshots/mod9_transactions.png)
 
 ### 26/12/25: Module 3
 
@@ -68,15 +68,6 @@
 
 * Attempted sample MongoDB scripts for the provided exercise A-F within the slides
 * Added summary writeup for tasks completed during the lesson
-
-![](./screenshots/mod9_accounts.png)
-![](./screenshots/mod9_bank_products.png)
-![](./screenshots/mod9_bank_staff.png)
-![](./screenshots/mod9_customers.png)
-![](./screenshots/mod9_schema.png)
-![](./screenshots/mod9_transacation_lines.png)
-![](./screenshots/mod9_transaction_status.png)
-![](./screenshots/mod9_transactions.png)
 
 ### 06/01/26: Module 10
 
